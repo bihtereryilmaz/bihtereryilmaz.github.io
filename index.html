@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bihter Eryılmaz - App Store Apps</title>
     <style>
+        html {
+            height: 100%;
+        }
         body {
             font-family: Arial, sans-serif;
             margin: 0;
@@ -12,6 +15,9 @@
             background-color: #f4f4f4;
             color: #333;
             line-height: 1.6;
+            min-height: 100%;
+            display: flex;
+            flex-direction: column;
         }
         header {
             background-color: #007bff;
@@ -37,6 +43,12 @@
         nav a:hover {
             text-decoration: underline;
         }
+        main {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
         section {
             max-width: 800px;
             margin: 20px auto;
@@ -60,6 +72,7 @@
             padding: 20px;
             background-color: #333;
             color: white;
+            width: 100%;
         }
         @media (max-width: 600px) {
             header h1 {
@@ -80,32 +93,30 @@
 
     <nav>
         <a href="#apps">Apps</a>
-        <a href="/MyContractionsTracker/support-url.html">Support</a>
-        <a href="/MyContractionsTracker/copyright.html">Copyright</a>
-        <a href="/MyContractionsTracker/privacy-policy.html">Privacy Policy</a>
-        <a href="/MyContractionsTracker/term-and-conditions.html">Terms and Conditions</a>
         <a href="https://apps.apple.com/tr/developer/bihter-gulec-eryilmaz/id1867286649">App Store Profile</a>
     </nav>
 
-    <section id="apps">
-        <h2>My Apps</h2>
-        <ul>
-            <li>
-                <strong>My Contractions Timer 5.1.1</strong>: An app for tracking labor contractions. 
-                <a href="https://apps.apple.com/tr/app/my-contractions-timer-5-1-1/id6757519496">Download on App Store</a>
-                <br>
-                <a href="/MyContractionsTracker/support-url.html">Support Page</a> |
-                <a href="/MyContractionsTracker/copyright.html">Copyright</a> |
-                <a href="/MyContractionsTracker/privacy-policy.html">Privacy Policy</a> |
-                <a href="/MyContractionsTracker/term-and-conditions.html">Terms and Conditions</a>
-            </li>
-            <!-- Add other apps here if needed, for example:
-            <li>
-                <strong>Other App</strong>: Description here.
-                <a href="https://apps.apple.com/tr/app/other-app/idYYYYY">Download on App Store</a>
-            </li> -->
-        </ul>
-    </section>
+    <main>
+        <section id="apps">
+            <h2>My Apps</h2>
+            <ul>
+                <li>
+                    <strong>My Contractions Timer 5.1.1</strong>: An app for tracking labor contractions. 
+                    <a href="https://apps.apple.com/tr/app/my-contractions-timer-5-1-1/id6757519496">Download on App Store</a>
+                    <br>
+                    <a href="/MyContractionsTracker/support-url.html">Support Page</a> |
+                    <a href="/MyContractionsTracker/copyright.html">Copyright</a> |
+                    <a href="/MyContractionsTracker/privacy-policy.html">Privacy Policy</a> |
+                    <a href="/MyContractionsTracker/term-and-conditions.html">Terms and Conditions</a>
+                </li>
+                <!-- Add other apps here if needed, for example:
+                <li>
+                    <strong>Other App</strong>: Description here.
+                    <a href="https://apps.apple.com/tr/app/other-app/idYYYYY">Download on App Store</a>
+                </li> -->
+            </ul>
+        </section>
+    </main>
 
     <footer>
         <p>&copy; 2026 Bihter Eryılmaz. All rights reserved. | <a href="mailto:bihter.gulec@gmail.com" style="color: #ccc;">Contact Us</a></p>
